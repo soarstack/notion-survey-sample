@@ -1,6 +1,7 @@
-import dynamic from 'next/dynamic';
+'use client'
 
-const SurveyJS = dynamic(() => import('../components/SurveyJS'), { ssr: false });
+import SurveyJS from './components/SurveyJS';
+
 
 export default function Home() {
   return (
